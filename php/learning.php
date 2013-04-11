@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
-	<head>
+<head>
 		<title>Learning PHP</title>
-	</head>
+</head>
 	<body>
 <?php 
 	echo 'Hello World!<br />';
@@ -31,7 +32,7 @@ echo $_SERVER['HTTP_USER_AGENT'];
 ?>
 <br>
 <br>
-<hr noshade size=7>
+								<hr noshade size=7>
 <br>
 <br>
 
@@ -40,7 +41,7 @@ echo $_SERVER['HTTP_USER_AGENT'];
 ?>
 <br>
 <br>
-<hr noshade size=7>
+								<hr noshade size=7>
 <br>
 <br>
 
@@ -50,9 +51,9 @@ echo $_SERVER['HTTP_USER_AGENT'];
 
 <!-- Name/Age Form using >> /var/www/action.php -->
 	<form action="action.php" method="post">
-		<p>Your name: <input type="text" name="name" /> </p>
-		<p>Your age: <input type="text" name="age" /> </p>
-		<p> <input type="submit" /> </p>
+		<p>Your name: <input type="text" name="name"/></p>
+		<p>Your age: <input type="text" name="age"/></p>
+		<p><input type="submit"/></p>
 	</form>
 
 <!-- End of Form -->  
@@ -60,7 +61,7 @@ echo $_SERVER['HTTP_USER_AGENT'];
 <br>
 <br>
 <br>
-<hr noshade size=7>
+								<hr noshade size=7>
 <br>
 <br>
 <br>
@@ -77,7 +78,16 @@ between [/*] and [[* /] (no space) will be commented out
 */
 
 ?>
-
+<br>
+<b>Below is a simple math problem.</b>
+<br>
+<?php
+	$x=5;
+	$y=6;
+		$z=$x+$y;
+		print "x + y =";	
+		echo $z;
+?>
 
 
 
